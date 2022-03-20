@@ -1,0 +1,278 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.main
+{
+	display: flex;
+	width:50pc;
+	margin-left: 100px;
+	height: 500px;
+	position: absolute;
+	margin-top: 50px;
+}
+
+.main_map
+{
+	position: relative;
+	display: flex;
+	width: 400px;
+	height: 400px;
+	margin-top: 20px;
+	box-shadow: 10px 5px 10px 5px #867979;
+}
+.form_cont
+{
+	position: relative;
+	display: flex;
+	
+	width: 600px;
+	height: 400px;
+	margin-top: 5px;
+	margin-left:70px;
+	justify-content: center;
+			align-items: center;
+	 	
+}
+		.inputbox {
+			position: relative;
+			width: 400px;
+			
+		}
+
+		.inputbox input {
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			color: black;
+			letter-spacing: 1px;
+			margin-bottom: 30px;
+			border: none;
+			border-bottom: 1px solid black;
+			background: transparent;
+			outline: none;
+		}
+
+		 .inputbox label {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			letter-spacing: 1px;
+			padding: 10px 0;
+			font-size: 16px;
+			color: black;
+			transition: 0.5s;
+		}
+
+		 .inputbox input:focus~label,
+		 .inputbox input:valid~label {
+			top: -20px;
+			left: 0px;
+			color: #03a9f4;
+		}
+
+		 input[type="submit"] {
+			background: transparent;
+			border: none;
+			outline: none;
+			color: #fff;
+			background: #03a9f4;
+			padding: 8px 16px;
+			border-radius: 5px;
+			font-size: 20px;
+
+		}
+		textarea
+		{
+			width: 400px;
+			outline: none;
+			background-color: transparent;
+			height: 50px;
+		}
+		h4 {
+			color: black;
+			margin-top: -400px;
+			margin-left: -70px;
+			padding: 5px;
+			align-items: center;
+			text-transform: capitalize;
+		}
+		.main_E_mail
+		{
+			display: flex;
+			position: absolute;
+			width: 110pc;
+			height: 300px;
+			top: 600px;
+			background-color: black;
+		}
+		.input_Email_2
+		{
+		width: 400px;
+		height: 43px;
+		margin-left: 800px;
+		margin-top: 60px;
+		color: white;
+		font-size: 30px;
+		}
+	@media (max-width: 768px)
+	{
+			.main
+			{
+				display: block;
+				width:100pc;
+				height: 50pc;
+				position: absolute;
+				
+				margin-top: 50px;
+			}
+			.main_map
+			{
+				position: relative;
+				display: flex;
+				width: 400px;
+				height: 400px;
+
+				margin-top: 20px;
+				margin-left: -50px;
+				box-shadow: 10px 5px 10px 5px #867979;
+			}
+			.form_cont
+			{
+				position: relative;
+				display: inline-flex;
+				width: 600px;
+				top: 40px;
+				margin-left: -100px; 
+				height: 400px;
+				right: 100px;
+				justify-content: center;
+				align-items: center;
+			}
+			.form_cont h4 
+			{
+				display: flex;
+				margin-left: 30px;
+				color: black;
+
+				align-items: center;
+			}
+			.main_E_mail
+			{
+				display: flex;
+				position: absolute;
+				width: 500px;
+				height: 300px;
+				top: 800px;
+				margin-top: 300px;
+				background-color: black;
+				overflow: hidden;
+			}
+			
+			.inputbox {
+			position: relative;
+			width: 300px;
+			
+		}
+
+		.inputbox input {
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			color: black;
+			letter-spacing: 1px;
+			margin-bottom: 30px;
+			border: none;
+			border-bottom: 1px solid black;
+			background: transparent;
+			outline: none;
+		}
+
+		 .inputbox label {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			letter-spacing: 1px;
+			padding: 10px 0;
+			font-size: 16px;
+			color: black;
+			transition: 0.5s;
+		}
+
+		 .inputbox input:focus~label,
+		 .inputbox input:valid~label {
+			top: -20px;
+			left: 0px;
+			color: #03a9f4;
+		}
+
+		 input[type="submit"] {
+			background: transparent;
+			border: none;
+			outline: none;
+			color: #fff;
+			background: #03a9f4;
+			padding: 8px 16px;
+			border-radius: 5px;
+			font-size: 20px;
+
+		}
+		textarea
+		{
+			width: 300px;
+			outline: none;
+			background-color: transparent;
+			border: 2px solid black;
+		}
+		.input_Email_2
+		{
+			width: 400px;
+			height: 43px;
+			margin-left: 50px;
+			margin-top: 60px;
+			color: white;
+			font-size: 30px;	
+		}
+	}
+	
+.icon-bar
+		{
+			position: fixed;
+			top: 50%;
+			transform: translateY(-50%);
+			-webkit-transform:translateY(-50%);
+			-ms-transform:translateY(-50%);
+			z-index: 10;
+		}
+		.icon-bar a
+		{
+			text-decoration: none;
+			width: 220px;
+			background-color: #3b5999;
+			color: #fff;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 5px;
+			transform: translateX(-175px);
+			transition: all 1s linear;
+			box-shadow: 10px 5px 10px 5px #867979;
+		}
+		a i{
+			padding-left: 20px;
+			font-size: 30px !important;
+			animation: let 3s linear alternate-reverse infinite
+		}
+		a:hover{
+			transform: translateX(0);	
+		}
+		@keyframes let
+		{
+			from{
+				transform: scale(0.8);
+			}
+			to{
+				transform: scale(1);
+			}
+		}
